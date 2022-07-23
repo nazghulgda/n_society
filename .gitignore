@@ -1,3 +1,4 @@
 env/
 .idea/
 n_project/__pycache__/
+templates/git_help.html.html
