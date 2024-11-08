@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
+from db_settings import db_info
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -73,15 +74,16 @@ WSGI_APPLICATION = 'n_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'HOST': '127.0.0.1',
-        'NAME': 'n_society_local',
-        'ENGINE': 'django.db.backends.postgresql',
-        'USER': 'nazghul',
-        'PASSWORD': 'dat4st0r',
-    }
-}
+# Database is configured in separate file. The file should contain:
+# dbinfo = {
+#         'host': 'IP of database server',
+#         'port': 'port',
+#         'user': 'user name',
+#         'password': 'password',
+#         'dbname': 'database name'
+# }
+
+DATABASES = db_info
 
 
 # Password validation
