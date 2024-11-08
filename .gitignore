@@ -1,3 +1,8 @@
 env/
 .idea/
 n_project/__pycache__/
+templates/git_help.html.html
+.DS_Store
+grafiki/
+n_society_stuff/
+n-society DB.pdf
